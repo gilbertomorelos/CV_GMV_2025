@@ -1,36 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Curriculum Vitae - Gilberto Morelos</title>
   <style>
     body {
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      font-family: Arial, sans-serif;
       background: #f5f5f5;
-      position: relative; /* Para que el botón absoluto se posicione respecto al body */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
     }
-    img {
-      max-width: 90%;
-      max-height: 95%;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .cv-container {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 90%;
+      max-width: 800px;
     }
-    .download-btn {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      padding: 10px 15px;
-      font-size: 14px;
+
+    .cv-container img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .cv-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
       cursor: pointer;
+    }
+
+    .cv-container button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <img src="CV_GMV_ENG_2025.png" alt="CV Gilberto Morelos">
 
-  <a href="CV_GMV_ENG_2025.png" download>
-    <button class="download-btn">Descargar CV</button>
+  <h1>Curriculum Vitae - Gilberto Morelos</h1>
+
+  <!-- CV en Español -->
+  <div class="cv-container">
+    <h2>CV en Español</h2>
+    <img src="CV_GMV_ESP_2025.png" alt="CV Español Gilberto Morelos">
+    <br>
+    <a href="CV_GMV_ESP_2025.png" download>
+      <button>Descargar CV Español</button>
+    </a>
+  </div>
+
+  <!-- CV en Inglés -->
+  <div class="cv-container">
+    <h2>CV en Inglés</h2>
+    <img src="CV_GMV_ENG_2025.png" alt="CV Inglés Gilberto Morelos">
+    <br>
+    <a href="CV_GMV_ENG_2025.png" download>
+      <button>Descargar CV Inglés</button>
+    </a>
+  </div>
+
+</body>
+</html>
+
