@@ -20,10 +20,11 @@
       margin: 20px 0;
       padding: 15px;
       text-align: center;
-      max-width: 90%;
+      width: 100%;
+      max-width: 500px; /* limita el tamaño máximo para desktop */
     }
     img {
-      max-width: 100%;
+      width: 100%; /* hace que la imagen se adapte al contenedor */
       height: auto;
       border-radius: 5px;
     }
@@ -39,6 +40,18 @@
     }
     .download-btn:hover {
       background-color: #0056b3;
+    }
+
+    /* Ajustes para móviles */
+    @media (max-width: 600px) {
+      .cv-container {
+        max-width: 90%; /* casi todo el ancho de la pantalla */
+        padding: 10px;
+      }
+      .download-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
